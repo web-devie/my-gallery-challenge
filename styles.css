@@ -1,0 +1,157 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container
+{
+    max-width:100rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+.profile-section
+{
+    text-align: center;
+    padding:6.4rem 0;
+}
+.profile-img
+{
+    width: 156px;
+    border-radius:11px;
+    margin-bottom: 1.6rem;
+}
+.profile-name
+{
+    font-size: 2.4rem;
+    color: #4E5150;
+    margin-bottom: 1.2rem;
+}
+.profile-location
+{
+    font-size:1.4rem;
+    color:#A9A9A9;
+    margin-bottom: 2.4rem;
+}
+
+.profile-details
+{
+    display: inline-flex;
+    gap: 3.2rem;
+    justify-content: center;
+    align-items: center;
+}
+.cards
+{
+   background-color: #E5E5E5;
+   width: 100px;
+   padding: 1.2rem 1.6rem;
+   border-radius: 11px;
+}
+.card-data
+{
+   font-size: 1.8rem;
+   color: #4E5150;
+}
+.card-description
+{
+    font-size: 1.4rem;
+    color: #BDBDBD;
+}
+
+
+/* Gallery */
+.gallery-section
+{
+    padding: 0 0 6.4rem;
+}
+.grid--3-cols
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3.2rem;
+    align-items: start;
+}
+.gallery-img img
+{
+    width: 100%;
+    border-radius: 11px;
+}
+.gallery-img:nth-child(2)
+{
+    grid-column: span 2;
+}
+.gallery-img:nth-child(3)
+{
+    grid-column: span 2;
+}
+.gallery-img:nth-child(4)
+{
+    grid-row: span 2;
+}
+
+@media(max-width:59.375em)
+{
+    html
+    {
+        font-size: 56.25%;
+    }
+}
+
+@media(max-width:48.75em)
+{
+    html
+    {
+        font-size: 50%;
+    }
+    .grid--3-cols
+    {
+        gap: 2.4rem;
+    }
+}
+@media(max-width:34.375em)
+{
+    html
+    {
+        font-size: 56.25%;
+    }
+    .grid--3-cols
+    {
+        gap: 1.8rem;
+    }
+}
+@media(max-width:28.125em)
+{
+
+    .grid--3-cols
+    {
+        gap: 1.6rem;
+    }
+}
+@media(max-width:25em)
+{
+    html
+    {
+        font-size: 56.25%;
+    }
+    .grid--3-cols
+    {
+        gap: 1rem;
+    }
+}
+/* 
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
